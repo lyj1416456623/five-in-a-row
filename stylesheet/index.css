@@ -4,7 +4,7 @@ body{
 }
 .test{
 	width: 100%;
-	height: 645px;
+	height: 640px;
 	background-image: url('../images/333.jpg');
 	background-repeat: repeat-y;
 	position: relative;
@@ -12,12 +12,16 @@ body{
 .start{
 	width: 180px;
 	height: 50px;
+	border-radius: 5px;
 	background-image: url('../images/9.png');
 	cursor: pointer;
 	position: absolute;
 	top:210px;
 	right:238px;
 
+}
+.start:hover{
+	box-shadow: 0 0 10px black inset;
 }
 .end{
 	width: 180px;
@@ -27,6 +31,10 @@ body{
 	position: absolute;
 	top:295px;
 	right: 238px;
+	border-radius: 5px;
+}
+.end:hover{
+	box-shadow: 0 0 10px black inset;
 }
 .hudie{
 	width: 200px;
@@ -44,7 +52,7 @@ body{
 	border-radius: 20px;
 	opacity: 0.8;
 	position: absolute;
-	top:10px;
+	top:18px;
 	left: 300px;
 
 
@@ -68,4 +76,54 @@ body{
 	z-index: 888;
 	opacity: 1;
 	cursor: pointer;
+}
+
+
+.over{
+	width: 500px;
+	height: 350px;
+	background-image: url(../images/15.png);
+	position: absolute;
+	top:100px;
+	left: 360px;
+	display: none;
+	z-index: 100;
+
+}
+.over1{
+	width: 500px;
+	height: 350px;
+	background-image: url(../images/14.png);
+	position: absolute;
+	top:100px;
+	left: 360px;
+	display: none;
+	z-index: 100;
+
+}
+.botton{
+	width: 180px;
+	height:50px;
+	border-radius: 5px;
+	background-image: url(../images/13.png);
+	cursor: pointer;
+	position: absolute;
+	top:220px;
+	left:150px;
+	z-index: 100;
+
+}
+.botton:hover{
+	box-shadow: 0 0 10px #333 inset;
+}
+.botton.pulse-a{
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function:ease;
+	-webkit-animation-iteration-count:infinite;
+  	-webkit-animation-name:pulse-a;
+}
+@-webkit-keyframes pulse-a{
+	0%{-webkit-transform:scale(1,1);}
+	50%{-webkit-transform:scale(1.1,1.1);}
+	100%{-webkit-transform:scale(1,1);}
 }

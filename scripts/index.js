@@ -94,26 +94,30 @@ window.onload=function(){
 					return;
 				}
 				if(kaiguan){
-					this.style.background='black';
-					this.style.boxShadow='0px 0px 2px #fff inset';
+					// this.style.background='black';
+					// this.style.boxShadow='0px 0px 2px #fff inset';
+					this.style.backgroundImage='url(./images/1.png)';
 					this.style.opacity=1;
 					var id=this.getAttribute('id');
 					dict1[id]=true;
 					kaiguan=false;
 					if(panduan(id,dict1)){
-						alert('black is winner!!!');
-						location.reload();
+						// alert('black is winner!!!');
+						// location.reload();
+						over.style.display='block';
 					}
 				}else{
-					this.style.background='white';
-					this.style.boxShadow='0px 0px 10px #000 inset';
+					// this.style.background='white';
+					// this.style.boxShadow='0px 0px 10px #000 inset';
+					this.style.backgroundImage='url(./images/2.png)';
 					this.style.opacity=1;
 					var id=this.getAttribute('id');
 					dict2[id]=true;
 					kaiguan=true;
 					if(panduan(id,dict2)){
-						alert('white is winner!!!');
-						location.reload();
+						// alert('white is winner!!!');
+						over1.style.display='block';
+						
 					}
 				}
 				this.setAttribute('hasColor',true);
@@ -122,6 +126,12 @@ window.onload=function(){
 		}
 	}
 	end.onclick=function(){
+		location.reload();
+	}
+	botton.onclick=function(){
+		location.reload();
+	}
+	botton1.onclick=function(){
 		location.reload();
 	}
 	
